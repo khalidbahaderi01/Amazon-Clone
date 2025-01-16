@@ -10,6 +10,7 @@ export default function SecondaryMenu(){
             <a href="" className="Menu_link">Registery</a>
             <a href="" className="Menu_link">Gift Cards</a>
             <a href="" className="Menu_link">Sell</a>
+            <h2>khalidbahaderi01@gmail.com</h2>
             </nav>
         </div>
     ); 
