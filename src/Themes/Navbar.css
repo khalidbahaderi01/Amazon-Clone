@@ -1,0 +1,18 @@
+.menuBar{
+    display: flex;
+    align-items: center;
+    background-color: #232f3e;
+}
+.menuItems{
+    display: flex;
+}
+.Menu_link{
+    color: #ffffff;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-family: Arial;
+    border: 1px solid transparent;
+}
+.Menu_link:hover{
+    border-color: #ffffff;
+}
