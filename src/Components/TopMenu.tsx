@@ -1,16 +1,11 @@
+import '../Theme/style.css'
+import MenuPart1 from './TopMenus/Part1'
+import SearchMenu from './TopMenus/Part2'
 export default function TopMenu(){
     return (<>
     <div className="topMenuBar" >
-        <div className="logo" >
-            <img src="icons/logo.png" alt="Amazon logo" />
-        </div>
-        <div className="deliver" >
-            <i className="fa-solid fa-location-dot" ></i>
-            <span>Deliver to 
-            <p>Afghanistan</p>
-            </span>
-            
-        </div>
-    </div>
-    </>)
+  <MenuPart1 />
+  <SearchMenu />
+  </div>
+</>)
 }
