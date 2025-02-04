@@ -1,10 +1,13 @@
-interface gridParam {
-  num: number;
-  gridnum: number;
+import React from "react";
+
+interface CardProps {
+  gridNumber: number;
+  itemsNumber: number;
 }
 
-export default function Card({ gridParam }: { gridParam: gridParam }) {
-  return (
+const Card: React.FC<CardProps> = ({ gridNumber, itemsNumber }) => {
+
+return (
     <>
       <div className="card">
         <p>
@@ -12,14 +15,14 @@ export default function Card({ gridParam }: { gridParam: gridParam }) {
         </p>
         <div
           className="GridBox"
-          style={{ gridTemplateColumns: `repeat(${gridParam}, 1fr)` }}
+          style={{ gridTemplateColumns: `repeat(${gridNumber}, 1fr)` }}
         >
-          {gridParam == 1 ? (
+          {itemsNumber == 1 ? (
             <div className="box">
               <img src="1.jpg" alt="" className="img" />
               <p>Headsets</p>
             </div>
-          ) : gridParam == 2 ? (
+          ) : itemsNumber == 2 ? (
             <div>
               <div className="box">
                 <img src="2.jpg" alt="" className="img" />
@@ -31,7 +34,7 @@ export default function Card({ gridParam }: { gridParam: gridParam }) {
                 <p>Computer mice</p>
               </div>
             </div>
-          ) : gridParam == 3 ? (
+          ) : itemsNumber == 3 ? (
             <div>
               <div className="box">
                 <img src="2.jpg" alt="" className="img" />
@@ -76,4 +79,7 @@ export default function Card({ gridParam }: { gridParam: gridParam }) {
       </div>
     </>
   );
+
 }
+
+export default Card;
